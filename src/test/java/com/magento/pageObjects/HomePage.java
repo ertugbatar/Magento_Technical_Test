@@ -8,7 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 
-
+   // The Homepage might also include methods for displaying personalized content based on the user's browsing history
+  //  Using the Homepage can help to make Cucumber scenarios more readable and maintainable by encapsulating the logic for interacting with the homepage in a separate class.
     @FindBy(id = "search")
     public WebElement searchBox;
 
@@ -25,6 +26,4 @@ public class HomePage {
         PageFactory.initElements(Driver.get(), this);
     }
 
-    public void searchProduct(String gwynEnduranceTeeSmallYellow) {
-    }
 }

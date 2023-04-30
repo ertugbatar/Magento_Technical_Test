@@ -7,6 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ProductPage extends HomePage {
 
+    //It provides methods for interacting with the various elements on the product page, such as the product name, description, images, reviews, and price.
+    //In Cucumber, the Product is typically used in step definitions to select a product, view its details, and add it to the cart.
+
     @FindBy(xpath = "//div[@id='option-label-size-143-item-168']")
     public WebElement sizeSelect;
     ////div[@class='swatch-opt-1572']//div[@id='option-label-size-143-item-168']

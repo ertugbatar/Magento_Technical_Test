@@ -12,7 +12,7 @@ public class WebDriverFactory {
                 driver = new ChromeDriver();
                 break;
             case "firefox":
-                System.setProperty("webdriver.gecko.driver", "path/to/geckodriver");
+                System.setProperty("webdriver.chrome.driver", "path/to/chromeodriver");
                 driver = new FirefoxDriver();
                 break;
             // add more cases for other browsers if needed

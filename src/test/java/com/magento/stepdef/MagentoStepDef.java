@@ -72,9 +72,6 @@ public class MagentoStepDef {
     @Then("the cart total should be {string}")
     public void the_cart_total_should_be(String string) throws InterruptedException {
         Thread.sleep(4000);
-       // String cartTotal = CartPage.cartTotal.getText();
-      //  Assert.assertEquals("Cart is incorrect", "$92.00", cartTotal);
-        // Find the cart total element and get its text
         WebElement cartTotalElement = Driver.get().findElement(By.xpath("//*[@id=\"cart-totals\"]/div/table/tbody/tr[4]"));
         String cartTotal = cartTotalElement.getText();
 

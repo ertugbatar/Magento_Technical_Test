@@ -9,7 +9,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.w3c.dom.html.HTMLInputElement;
 
-import java.util.List;
+
+//Using the CartPage can help to make Cucumber scenarios more readable and maintainable by encapsulating the logic for interacting with the cart page in a separate class.
 
 public class CartPage extends HomePage {
 
@@ -29,12 +30,6 @@ public class CartPage extends HomePage {
     @FindBy(xpath = "*[@id=\"shopping-cart-table\"]/tbody[1]")
     public WebElement cartItemsTable;
     public Object quantityInput;
-
-    ////*[@id="shopping-cart-table"]/tbody[1]
-    ////table[contains(@class, 'cart-items')]
-
-   // @FindBy(xpath = "//input[contains(@class, 'cart-qty-input')]")
-   // public static WebElement quantityInput;
 
     public CartPage() {
         PageFactory.initElements(Driver.get(), this);

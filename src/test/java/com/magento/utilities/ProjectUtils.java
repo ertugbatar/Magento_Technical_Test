@@ -40,9 +40,6 @@ public class ProjectUtils {
         return null;
     }
 
-   // public static String getCartTotal() {
-     //   return cartPage.cartTotal.getText();
-
     public static void updateQuantity(String itemName, int newQuantity) {
         WebElement itemRow = cartPage.cartItemsTable.findElement(By.id("shopping-cart-table"));
         WebElement itemQuantityInput = itemRow.findElement((By) cartPage.quantityInput);

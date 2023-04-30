@@ -16,7 +16,7 @@ public class ConfigurationReader {
         try {
             // Open file using FileInputStream (open file)
             FileInputStream file = new FileInputStream("configuration.properties");
-            //3- Load the "properties" object with "file" (load properties)
+            // Load the "properties" object with "file" (load properties)
             properties.load(file);
             //close the file in the memory
             file.close();
